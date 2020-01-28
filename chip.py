@@ -1,4 +1,5 @@
 
+import convo
 from chatterbot import ChatBot
 bot = ChatBot('Chip', trainer='chatterbot.trainers.ListTrainer')
 from chatterbot.trainers import ListTrainer
@@ -14,5 +15,5 @@ trainer = ListTrainer(bot)
 
 trainer.train(conversation)
 
-response = bot.get_response("Hello")
+response = bot.get_response("What's your name?")
 print(response)
